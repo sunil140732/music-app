@@ -14,11 +14,11 @@ const Albums = ({setCurrentSongIndex,setIsPlaying,currentImg,setCurrentImgIndex}
         </div>
 
         {/* row-2 with 4 columns */}
-        <div className='row my-2'>
+        <div className='row my-3'>
             {
                 albums.map((album,index)=>(
                     <div className='col-12 col-sm-12 col-md-3 col-lg-3' key={album.id}>
-                        <div className="card shadow album">
+                        <div className="card shadow album mb-3">
                             <img src={album.image} 
                             alt={album.name}
                             onClick={()=>{
